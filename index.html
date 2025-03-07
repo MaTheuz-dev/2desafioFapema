@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de inscrição</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="redirecionar.html" class="redirecionar">#</a>
+    <img src="imgs/seta.png" alt="seta para a esquerda" class="seta">
+    <p class="voltar">Voltar</p>
+      <header>
+        <section class="imagens">
+          <img src="/imgs/image.png" alt="ilustrações de estudo" class="imagemIlustracao">
+          <img src="/imgs/logoTrilhas.png" alt="logo Trilhas" class="trilhasLogo">
+        </section>
+          <h1 class="formulario">Formulário de inscrição</h1>
+        <p class="dados">Preencha os dados abaixo para fazer sua inscrição no Programa<span>Trilhas.</span></p>
+      </header>
+      <main>
+        <h2>Informações do participante</h2>
+          <form>
+            <fieldset>
+              <!--Parte para o nome-->
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nomeCompleto"> 
+            </fieldset>
+            <fieldset>
+              <!--Parte para a data de nascimento-->
+              <label for="data">Data de nascimento</label>
+              <input type="date" id="data" name="dataNasc">
+            </fieldset>
+            <fieldset>
+              <!--Parte para o cpf-->
+              <label for="cpf">CPF</label>
+              <input type="text" id="cpf" name="CPF"
+              pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Insira um CPF válido" required>
+            </fieldset>
+            <fieldset>
+              <!--Parte para o sexo-->
+              <label for="sexo">Sexo</label>
+              <select name="sexo" id="sexo">
+                <option value="masc" pl>Masculino</option>
+                <option value="fem">Feminino</option>
+                <option value="outro">Outro</option>
+                </select>
+            </fieldset>
+              <!--Parte para o email-->
+            <fieldset>
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email">
+            </fieldset>
+              <!--Parte para o telefone-->
+            <fieldset>
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone">
+            </fieldset>
+              <!--Parte para o documento de identidade (file)-->
+            <fieldset>
+              <label class="files" for="arquivo">Documento de identidade</label>
+              <input type="file" id="arquivo" name="arquivo" class="arquivoDoc">
+              <img src="/imgs/File1.png" alt="Imagem para selecionar arquivo" class="imagemFile">
+            </fieldset>
+          </form>
+        
+        <form>
+          <h2>Endereço residencial</h2>
+          <!--Parte para o CEP-->
+            <fieldset>
+              <label for="cep">CEP</label>
+              <input type="text" id="cep" name="cep">
+            </fieldset>
+            <!--Parte para o Endereço (Rua e Número)-->
+            <section class="endereco1">
+              <label for="rua" id="nomeRua">Rua</label>
+              <input type="text" id="rua" name="rua" placeholder="Rua 1">
+              <label for="numero" id="numeroRua">Número</label>
+              <input type="number" id="numero" name="numero">
+            </section>
+            <!--Parte para o Endereço (Cidade e Estado)-->
+            <fieldset>
+              <label for="cidade" id="nomeCidade">Cidade</label>
+              <input type="text" id="cidade" name="cidade" placeholder="São Luís">
+              <label for="estado" id="nomeEstado">Estado</label>
+              <input type="text" id="estado" name="estado" placeholder="MA">
+            </fieldset>
+            <!--Parte para o Comprovante de Residência-->
+            <fieldset>
+              <label class="files" for="cmprvtResidencia">Comprovante de Residência</label>
+              <input type="file" id="cmprvtResidencia" name="arquivo" class="arquivoDoc">
+              <img src="/imgs/File1.png" alt="Imagem para selecionar arquivo" class="imagemFile">
+            </fieldset>
+        </form>
+
+        <form>
+          <h2>Trilhas de aprendizagem</h2>
+          <p class="trilha3">Selecione apenas uma trilha</p>
+            <section class="trilhasIcon">        
+            <!--Imagem trilha Front-End-->
+              <img src="/imgs/circle.png" alt="imagem de um círculo a ser marcado" class="circle1">
+              <img src="/imgs/iconFEnd.png" alt="ícone de front-end" class="icon1">
+              <p class="trilhaType">Programação Front-End</p>
+            <!--Imagem trilha Back-End-->
+              <img src="/imgs/circle.png" alt="imagem de um círculo a ser marcado" class="circle2">
+              <img src="/imgs/iconBEnd.png" alt="ícone de back-end" class="icon2">
+              <p class="trilhaType">Programação Back-End</p>
+            </section>
+
+            <section class="trilhasIcon">
+            <!--Imagem trilha Games-->
+              <img src="/imgs/circle.png" alt="imagem de um círculo a ser marcado" class="circle1">
+              <img src="/imgs/iconGames.png" alt="ícone de programação de jogos" class="icon1">
+              <p class="trilhaType">Programação de Jogos</p>
+            <!--Imagem trilha Design UX-->
+              <img src="/imgs/circle.png" alt="imagem de um círculo a ser marcado" class="circle2">
+              <img src="/imgs/iconUX.png" alt="ícone de design UX" class="icon2">
+              <p class="trilhaType">Design e Experiência</p>
+            </section>
+
+            <section class="trilhasIcon">
+            <!--Imagem trilha Cnc de Dados-->
+              <img src="/imgs/circle.png" alt="imagem de um círculo a ser marcado" class="circle1">
+              <img src="/imgs/iconCncDados.png" alt="ícone de CNC de dados" class="icon1">
+              <p class="trilhaType">Ciência de Dados</p>
+              <div class="circleBtn">
+                <input type="radio" value="circulo" class="circle3" name="circle">
+                <input type="radio" value="circulo" class="circle4" name="circle">
+                <input type="radio" value="circulo" class="circle3" name="circle">
+                <input type="radio" value="circulo" class="circle4" name="circle">
+                <input type="radio" value="circulo" class="circle3" name="circle">
+              </div>
+              </section>
+            </section>
+            <div>
+              <input type="radio" id="confirmacao" name="confirm">
+              <p class="termos">Declaro que li e concordo com os <strong class="orange">Termos e Condições <span>e com a Política de Privacidade</strong></span></p>
+            </div>
+        </form>
+        <div></div>
+      </main>
+      
+
+</body>
+</html>
